@@ -1,0 +1,42 @@
+// Java implementation of the approach 
+import java.util.*; 
+class GFG 
+{ 
+
+// Function to return the count of bits 
+// to be flipped to convert a to b 
+static int countBits(int a, int b) 
+{ 
+
+	
+	int count = 0; 
+
+	
+	while (a > 0 || b > 0) 
+	{ 
+
+		
+		int last_bit_a = a & 1; 
+		int last_bit_b = b & 1; 
+
+		if (last_bit_a != last_bit_b) 
+			count++; 
+
+		 
+		a = a >> 1; 
+		b = b >> 1; 
+	} 
+
+	 
+	return count; 
+} 
+
+
+public static void main(String[] args) 
+{ 
+	int a = 10, b = 20; 
+
+	System.out.println(countBits(a, b)); 
+} 
+} 
+
