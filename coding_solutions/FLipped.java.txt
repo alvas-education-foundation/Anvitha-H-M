@@ -1,10 +1,9 @@
-// Java implementation of the approach 
+ 
 import java.util.*; 
 class GFG 
 { 
 
-// Function to return the count of bits 
-// to be flipped to convert a to b 
+
 static int countBits(int a, int b) 
 { 
 
